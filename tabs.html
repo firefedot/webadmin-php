@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+</head>
+<body>
+    <div class="tabs">
+
+    <div class="tab">
+<input type="radio" id="tab-1" name="tab-group-1" checked>
+<label for="tab-1">
+    <a href="javascript:void loadTab( 'online.php' )">В сети</a> |
+</label>
+</div>
+<div class="tab">
+<input type="radio" id="tab-2" name="tab-group-1">    
+<label for="tab-2">
+    <a href="javascript:void loadTab( 'offline.php' )">Не в сети</a> |
+</label>
+</div>
+<div class="tab">
+<input type="radio" id="tab-3" name="tab-group-1"> 
+<label for="tab-3">
+    <a href="javascript:void loadTab( 'listall.php' )">Весь список</a>
+</label>
+    </div>
+<div class="tab">
+<input type="radio" id="tab-4" name="tab-group-1"> 
+<label for="tab-4">
+    <a href="javascript:void loadTab( 'none.php' )">Список тех, кто ни разу входил</a>
+</label>
+    </div>
+<div id="content" style="padding:10px;border:0px solid black;">
+</div>
+    </div>
+</body>
+</html>

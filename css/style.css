@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16.12.2014, 11:59:25
+    Author     : firefedot
+*/
+
+  table th {background-color: lightblue;}
+  .hover_Row { background-color: yellow; }
+  .clicked_Row { background-color: lightgreen; }
+  
+  table {
+      font-size: 13px;
+  }
+/*
+
+
+.tabs {
+  position: relative;
+  min-height: 200px; 
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+[type=radio]:checked ~ label {
+  background: red;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}*/

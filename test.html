@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Тест текста на проверку</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+        #payt3 {display: none;}
+        [for="payt3"] {
+          position: relative;
+          display: block;
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          background: #ddd linear-gradient(#ccc, #fff);
+          box-shadow:
+                inset 0 2px 1px rgba(0,0,0,.15),
+                0 2px 5px rgba(200,200,200,.1);
+          cursor: pointer;
+        }
+        [for="payt3"]:after {
+          content: "";
+          position: absolute;
+          left: 40%; top: 40%;
+          width: 20%;
+          height: 20%;
+          border-radius: 100%;
+          background: #969696 radial-gradient(40% 35%, #ccc, #969696 60%);
+          box-shadow:
+                inset 0 2px 4px 1px rgba(0,0,0,.3),
+                0 1px 0 rgba(255,255,255,1),
+                inset 0 1px 0 white;
+        }
+        [for="payt3"]:before {
+          content: "";
+          position: absolute;
+          top: 8%; right: 8%; bottom: 8%; left: 8%;
+          border-radius: 100%;
+          background: #eaeaea;
+          box-shadow:
+                0 3px 5px rgba(0,0,0,.25),
+                inset 0 1px 0 rgba(255,255,255,.3),
+                inset 0 -5px 5px rgba(100,100,100,.1),
+                inset 0 5px 5px rgba(255,255,255,.3);
+        }
+        #payt3:checked ~ [for="payt3"]:before {
+          background: #e5e5e5 linear-gradient(#dedede, #fdfdfd);
+        }
+        #payt3:checked ~ [for="payt3"]:after {
+          background: #25d025 radial-gradient(40% 35%, #5aef5a, #25d025 60%);
+          box-shadow:
+                inset 0 3px 5px 1px rgba(0,0,0,.1),
+                0 1px 0 rgba(255,255,255,.4),
+                0 0 10px 2px rgba(0, 210, 0, .5);
+        }
+        </style>
+        
+    </head>
+    <body>
+        <div>Далее форма для примерного расположения вопросов и их вариантов ответов</div>
+        
+        <form>
+            <input type="checkbox" id="payt3"/><label for="payt3"></label>
+            <label>Что такой браузер?</label> </br>  
+            <label><input type="radio" name="que1" />Вариант</label></br>
+            <label><input type="radio" name="que1" />Вариант</label></br>
+            <label><input type="radio" name="que1" />Вариант</label></br>
+            <label><input type="radio" name="que1" />Вариант</label></br></br>
+            
+            <label>Что такое пароль от почты?</label> </br>            
+            <label><input type="radio" name="que2" />Вариант - 1</label></br>
+            <label><input type="radio" name="que2" />Вариант - 2</label></br>
+            <label><input type="radio" name="que2" />Вариант - 3</label></br>
+            <label><input type="radio" name="que2" />Вариант - 4</label></br></br>
+            <label>Что такое флешка?</label> </br>            
+            <label><input type="radio" name="que3" />Вариант</label></br>
+            <label><input type="radio" name="que3" />Вариант</label></br>
+            <label><input type="radio" name="que3" />Вариант</label></br>
+            <label><input type="radio" name="que3" />Вариант</label></br></br>
+            <label>Что такое монитор?</label> </br>            
+            <label><input type="radio" name="que4" />Вариант</label></br>
+            <label><input type="radio" name="que4" />Вариант</label></br>
+            <label><input type="radio" name="que4" />Вариант</label></br>
+            <label><input type="radio" name="que4" />Вариант</label></br></br>
+            <label>Что такое системный блок?</label> </br>            
+            <label><input type="radio" name="que5" />Вариант</label></br>
+            <label><input type="radio" name="que5" />Вариант</label></br>
+            <label><input type="radio" name="que5" />Вариант</label></br>
+            <label><input type="radio" name="que5" />Вариант</label></br></br>
+            <label>Какая у вас версия виндовс?</label> </br>            
+            <label><input type="radio" name="que6" />Вариант</label></br>
+            <label><input type="radio" name="que6" />Вариант</label></br>
+            <label><input type="radio" name="que6" />Вариант</label></br>
+            <label><input type="radio" name="que6" />Вариант</label></br></br>
+            <label>Сколько места свободна у вас на флешке?</label> </br>            
+            <label><input type="radio" name="que7" />Вариант</label></br>
+            <label><input type="radio" name="que7" />Вариант</label></br>
+            <label><input type="radio" name="que7" />Вариант</label></br>
+            <label><input type="radio" name="que7" />Вариант</label></br></br>
+            <label>Сколько свободного места у вас на секретном разделе?</label> </br>            
+            <label><input type="radio" name="que8" />Вариант</label></br>
+            <label><input type="radio" name="que8" />Вариант</label></br>
+            <label><input type="radio" name="que8" />Вариант</label></br>
+            <label><input type="radio" name="que8" />Вариант</label></br></br>
+            <label>Что такое секретный раздел?</label> </br>            
+            <label><input type="radio" name="que9" />Вариант</label></br>
+            <label><input type="radio" name="que9" />Вариант</label></br>
+            <label><input type="radio" name="que9" />Вариант</label></br>
+            <label><input type="radio" name="que9" />Вариант</label></br></br>
+            <label>Сможете открыть секретный раздел без запуска файла старт.бат?</label> </br>            
+            <label><input type="radio" name="que10" />Вариант</label></br>
+            <label><input type="radio" name="que10" />Вариант</label></br>
+            <label><input type="radio" name="que10" />Вариант</label></br>
+            <label><input type="radio" name="que10" />Вариант</label></br></br>
+            <label>Что такое браузер?</label> </br>            
+            <label><input type="radio" name="que11" />Вариант</label></br></br>
+            <label>Что такое интернет?</label> </br>            
+            <label><input type="radio" name="que12" />Вариант</label></br></br>
+            <label>Что такое яндекс?</label> </br>            
+            <label><input type="radio" name="que13" />Вариант</label></br></br>
+            <label>Что такое гугл?</label> </br>            
+            <label><input type="radio" name="que14" />Вариант</label></br></br>
+            <label>Что такое тема письма и где и когда нужно ее писать?</label> </br>            
+            <label><input type="radio" name="que15" />Вариант</label></br></br>
+            <label>Что такое тело письма и когда в него можно и нельзя писать?</label> </br>            
+            <label><input type="radio" name="que16" />Вариант</label></br></br>
+            <label>Что такое портфель?</label> </br>            
+            <label><input type="radio" name="que17" />Вариант</label></br></br>
+            <label>Можете ли добавить файл в портфель?</label> </br>            
+            <label><input type="radio" name="que18" />Вариант</label></br></br>
+            <label>Можете ли вы дать доступ к вашему портфелю другому человеку?</label> </br>            
+            <label><input type="radio" name="que19" />Вариант</label></br></br>
+            <label>Что делать если файл слишком большой для оправки письмом?</label> </br>            
+            <label><input type="radio" name="que20" />Вариант</label></br></br>
+            <label>Что такое письмо с вложением?</label> </br>            
+            <label><input type="radio" name="que21" />Вариант</label></br></br>
+            <label>Что  такое вложение?</label> </br>            
+            <label><input type="radio" name="que22" />Вариант</label></br></br>
+            <label>В какой раскладке писать логины и пароли?</label> </br>            
+            <label><input type="radio" name="que23" />Вариант</label></br></br>
+            <label>Что такое пароль?</label> </br>            
+            <label><input type="radio" name="que24" />Вариант</label></br></br>
+            <label>Как или где хранить пароль?</label> </br>            
+            <label><input type="radio" name="que25" />Вариант</label></br></br>
+            <label>Что такое логин и как его можно и нельзя использовать?</label> </br>            
+            <label><input type="radio" name="que26" />Вариант</label></br></br>
+            <label>Какой у вас интернет проводной или через модем-3g/4g?</label> </br>            
+            <label><input type="radio" name="que27" />Вариант</label></br></br>
+            <label>У вас интернет через вай-фай?</label> </br>            
+            <label><input type="radio" name="que28" />Вариант</label></br></br>
+            <label>Как к вам домой/на работу приходит интернет?</label> </br>            
+            <label><input type="radio" name="que29" />Вариант</label></br></br>
+            <label>Какой провайдер интернета?</label> </br>            
+            <label><input type="radio" name="que30" />Вариант</label></br></br>
+            <label>Что такое провайдер?</label> </br>            
+            <label><input type="radio" name="que31" />Вариант</label></br></br>
+
+            <label>Что такое teamviewer?</label> </br>            
+            <label><input type="radio" name="que32" />Вариант</label></br></br>
+            <label>Для чего он нужен?</label> </br>            
+            <label><input type="radio" name="que33" />Вариант</label></br></br>
+            <label>Где его  взять если у вас нет?</label> </br>            
+            <label><input type="radio" name="que34" />Вариант</label></br></br>
+
+            <label>Что такое firefox?</label> </br>            
+            <label><input type="radio" name="que35" />Вариант</label></br></br>
+            <label>Что такое mozilla?</label> </br>            
+            <label><input type="radio" name="que36" />Вариант</label></br></br>
+            <label>Что делать если у вас нет доступа к почте?</label> </br>            
+            <label><input type="radio" name="que37" />Вариант</label></br></br>
+            <label>Что делать если квадратики зеленые, а почты нет?</label> </br>            
+            <label><input type="radio" name="que38" />Вариант</label></br></br>
+            <label>Как правильно называются квадратики?</label> </br>            
+            <label><input type="radio" name="que39" />Вариант</label></br></br>
+            <label>Как правильно называется почта?</label> </br>            
+            <label><input type="radio" name="que40" />Вариант</label></br></br>
+            <label>Как нужно правильно запускать openvpn?</label> </br>            
+            <label><input type="radio" name="que41" />Вариант</label></br></br>
+            <label>Как вы запускаете почту?</label> </br>            
+            <label><input type="radio" name="que42" />Вариант</label></br></br>
+            <label>Как запускать, если у вас нет portableapps?</label> </br>            
+            <label><input type="radio" name="que43" />Вариант</label></br></br>
+
+            <label>Где можно писать текстовый документ?</label> </br>            
+            <label><input type="radio" name="que44" />Вариант</label></br></br>
+            <label>В какой формате нужно его всем отправлять, чтобы все го прочитали?</label> </br>            
+            <label><input type="radio" name="que45" />Вариант</label></br></br>
+            <label>Где можно писать и делать таблички?</label> </br>            
+            <label><input type="radio" name="que46" />Вариант</label></br></br>
+            <label>В каком формате нужно сохранять таблицы, чтобы все смогли их открыть?</label> </br>            
+            <label><input type="radio" name="que47" />Вариант</label></br></br>
+            <label>Есть ли у вас Exel?</label> </br>            
+            <label><input type="radio" name="que48" />Вариант</label></br></br>
+            <label>Если у вас Word?</label> </br>            
+            <label><input type="radio" name="que49" />Вариант</label></br></br>
+            <label>Есть ли у вас OpenOffice?</label> </br>            
+            <label><input type="radio" name="que50" />Вариант</label></br></br>
+            <label>Есть ли у вас LibraOffice?</label> </br>            
+            <label><input type="radio" name="que51" />Вариант</label></br></br>
+            <label>В какой программе вы создаете документы?</label> </br>            
+            <label><input type="radio" name="que52" />Вариант</label></br></br>
+            <label>В какой программе вы создаете таблички?</label> </br>            
+            <label><input type="radio" name="que53" />Вариант</label></br></br>
+
+            <label>Что делать если у вас не запускается мозила?</label> </br>            
+            <label><input type="radio" name="que54" />Вариант</label></br></br>
+            <label>Где можно взять портабельную версию мозилы, если у вас перестала работать?</label> </br>            
+            <label><input type="radio" name="que55" />Вариант</label></br></br>
+            <label>Что такое портабельная версия мозилы (программы)?</label> </br>            
+            <label><input type="radio" name="que56" />Вариант</label></br></br>
+
+            <label>В каких случая можно решить проблему самостоятельно?</label> </br>            
+            <label><input type="radio" name="que57" />Вариант</label></br></br>
+            <label>В каких случаях нужно обращаться в техническую поддержку?</label> </br>            
+            <label><input type="radio" name="que58" />Вариант</label></br></br>
+            <label>Какие способы обращения в тех.поддержку верные?</label> </br>            
+            <label><input type="radio" name="que59" />Вариант</label></br></br>
+            <label>Что нужно писать в письме на тех.поддержку?</label> </br>            
+            <label><input type="radio" name="que60" />Вариант</label></br></br>
+            <label>Как правильно оформлять письмо?</label> </br>            
+            <label><input type="radio" name="que61" />Вариант</label></br></br>
+
+        </form>
+            
+        
+    </body>
+    
+    
+
+
+
+    
+</html>
